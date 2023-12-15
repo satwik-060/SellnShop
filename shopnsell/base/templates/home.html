@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+{% load static %}
+
+{% block body %}
+<div class="container text-center">
+    <h1>Explore Items</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="image-wrapper bg-info">
+            <img src="{% static 'nachos.webp' %}" class="card-img-top" alt="No Image" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nachos</h5>
+            <h6>Price : 120/-</h6>
+            <a href="#" class="btn btn-success">Buy</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="image-wrapper bg-info">
+            <img src="{% static 'nachos.webp' %}" class="card-img-top" alt="No Image" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nachos</h5>
+            <h6>Price : 120/-</h6>
+            <a href="#" class="btn btn-success">Buy</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
